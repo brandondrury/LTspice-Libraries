@@ -1,0 +1,17 @@
+-- Download the pot.zip 
+
+-- Find your C:\Users\YOUR_USERNAME\Documents\LTspiceXVII\lib\  folder
+-- Place pot.asy in your  "sym" folder.    C:\Users\YOUR_USERNAME\Documents\LTspiceXVII\lib\sym\
+-- Place pot.sub in your "sub" folder.  C:\Users\YOUR_USERNAME\Documents\LTspiceXVII\lib\ sub\
+-- Click the text tool.  Select "SPICE Directive" and paste in .include pot.sub.
+-- Restart LTspice
+-- Creat a new schematic.  Press F2.  You should see "Pot".
+
+
+The wiper is on a 0-1 scale.  1 = 100%.  0.5 = 50%.
+There is a glitch that occurs if a resistor is 0 ohms in LtSpice.  So, this pot actually is limited from 0.001 - 0.999 so don't freak out if your values are off by 0.1% on extreme settings.
+
+
+
+
+
